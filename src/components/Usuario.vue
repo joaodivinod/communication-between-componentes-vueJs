@@ -2,7 +2,10 @@
     <div class="container">
         <h1>Componente Usuário</h1>
         <p>Esse é um componente muito legal!</p>
+        <p>nome e : <strong>{{nome}}</strong></p>
         <button @click="alterarNome">Mudar Nome</button>
+
+
         <hr>
         <div class="componentes">
             <app-usuario-info v-bind:nome="nome" />
@@ -25,7 +28,8 @@ export default {
     methods:{
         alterarNome(){
             this.nome = 'Ana Luiza'
-        }
+        },
+
     }
 }
 </script>
