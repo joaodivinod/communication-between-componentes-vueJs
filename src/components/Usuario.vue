@@ -3,7 +3,7 @@
         <h1>Componente Usuário</h1>
         <p>Esse é um componente muito legal!</p>
         <p>nome e : <strong>{{nome}}</strong></p>
-        <button @click="alterarNome">Mudar Nome</button>
+        <button @click="alterarNome" >Mudar Nome</button>
 
 
         <hr>
@@ -29,7 +29,9 @@ export default {
         alterarNome(){
             this.nome = 'Ana Luiza'
         },
-
+      reiniarNome() {
+          this.nome = 'Pedro'
+      }
     }
 }
 </script>
