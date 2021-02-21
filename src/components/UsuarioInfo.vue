@@ -4,13 +4,23 @@
         <p>Vários detalhes...</p>
         <p>Nome do Usuario : <strong>{{ nome }}</strong></p>
       <button @click="reiniarNome()">Reinicializar Nome</button>
+      <p>idade :<strong> {{idade}}</strong></p>
 
     </div>
 </template>
 
 <script>
 export default {
-    props:['nome'],
+    props:{
+      nome:{
+        type:String,
+        default:'Anônimo',
+      },
+      idade:{
+        type:Number,
+
+      }
+    },
     methods:{
       inverterNome(){
        return  this.nome.split('').reverse().join('')
